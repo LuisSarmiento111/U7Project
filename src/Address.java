@@ -16,8 +16,8 @@ public class Address {
     public Address(Address other) {
         streetNum = other.getStreetNum();
         streetName = other.getStreetName();
-        city = other.city;
-        state = other.state;
+        city = other.getCity();
+        state = other.getState();
         zipCode = other.getZipCode();
     }
 
