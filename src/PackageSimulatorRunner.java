@@ -1,10 +1,12 @@
 import java.nio.charset.StandardCharsets;
+import java.util.Optional;
 import java.util.Scanner;
 
 public class PackageSimulatorRunner {
     public static void main(String[] args) {
         Address test = new Address("1313", "Mockingbird Lane", "Springfield", "MO", 65123);
         System.out.println(test);
+        System.out.println(PostageCalculator.calculatePostage(73561, 10206, 2.7, 2, 4, 6));
         Scanner scanner = new Scanner(System.in);
         String answer = "";
         while (!answer.equals("4")) {
