@@ -1,5 +1,4 @@
 public class PostageCalculator {
-
     public static double calculatePostage(int zip1, int zip2, double weight, double height, double length, double width) {
         double total = (3.75 + (weight / .1) * .05 + (Math.abs(zip1 / 100.0 - zip2 / 100.0) / 100.0));
         if (height + length + width > 36) {
