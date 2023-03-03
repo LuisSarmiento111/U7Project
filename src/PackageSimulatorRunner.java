@@ -20,7 +20,19 @@ public class PackageSimulatorRunner {
             answer = scanner.nextLine();
             if (answer.equals("1")) {
                 System.out.print("Enter the zip code of the origin package: ");
+                int zip1 = Integer.parseInt(scanner.nextLine());
                 System.out.print("Enter the zip code of the destination package: ");
+                int zip2 = Integer.parseInt(scanner.nextLine());
+                System.out.print("Enter the weight of the package: ");
+                double weight = Double.parseDouble(scanner.nextLine());
+                System.out.print("Enter the height of the package: ");
+                double height = Double.parseDouble(scanner.nextLine());
+                System.out.print("Enter the length of the package: ");
+                double length = Double.parseDouble(scanner.nextLine());
+                System.out.print("Enter the width of the package: ");
+                double width = Double.parseDouble(scanner.nextLine());
+                System.out.println("Cost: " + PostageCalculator.calculatePostage(zip1, zip2, weight, height, length, width));
+            } else if (answer.equals("2")) {
 
             }
         }
