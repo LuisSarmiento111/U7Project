@@ -33,6 +33,9 @@ public class PackageSimulatorRunner {
                 double width = Double.parseDouble(scanner.nextLine());
                 System.out.println("Cost: " + PostageCalculator.calculatePostage(zip1, zip2, weight, height, length, width));
             } else if (answer.equals("2")) {
+                System.out.print("How many packages would you like to simulate? ");
+                int packagesNum = Integer.parseInt(scanner.nextLine());
+                System.out.print("Randomly generated packages info: ");
 
             }
         }
